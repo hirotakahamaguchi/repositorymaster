@@ -1,0 +1,14 @@
+{
+  "name": "ringi-system",
+  "version": "1.0.0",
+  "description": "株式会社MANEXION 稟議システム — 多段階承認・差戻し対応 (依存パッケージなし)",
+  "main": "server.js",
+  "private": true,
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "start": "node server.js",
+    "backup": "node backup.js",
+    "test": "node --test test/**/*.test.js"
+  },
+  "license": "MIT"
+}

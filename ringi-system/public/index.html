@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>株式会社MANEXION 稟議システム</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#/inbox">📋 MANEXION 稟議システム</a>
+  <nav class="nav" hidden>
+    <a href="#/inbox" data-nav="inbox">承認待ち <span class="badge" id="badge-inbox" hidden>0</span></a>
+    <a href="#/mine" data-nav="mine">自分の申請 <span class="badge warn" id="badge-returned" hidden>0</span></a>
+    <a href="#/all" data-nav="all">一覧</a>
+    <a href="#/new" data-nav="new" class="nav-primary">＋ 新規申請</a>
+    <a href="#/templates" data-nav="templates" id="nav-templates" hidden>ルート管理</a>
+    <a href="#/users" data-nav="users" id="nav-users" hidden>ユーザー管理</a>
+    <a href="#/backup" data-nav="backup" id="nav-backup" hidden>バックアップ</a>
+  </nav>
+  <div class="userbox" id="userbox" hidden>
+    <span id="me-name" class="me-name"></span>
+    <a href="#/password" class="btn btn-sm">パスワード変更</a>
+    <button id="btn-logout" class="btn-sm" type="button">ログアウト</button>
+  </div>
+</header>
+<main id="app" class="container"><p class="muted">読み込み中…</p></main>
+<div id="toast" class="toast" hidden></div>
+<script src="/app.js"></script>
+</body>
+</html>
